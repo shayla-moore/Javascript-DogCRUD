@@ -1,0 +1,34 @@
+<div class="jumbotron text-center">
+	<h1>All Doggos</h1>
+</div>
+
+<table class="table table-bordered table-hover table-striped">
+	<thead>
+		<tr>
+			<th>Dog's Name<th>
+			<th>Breed</th>
+			<th>Age</th>
+			<th>Birthday</th>
+			<th>Owner's Name</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<% for (var dog of dogs) { %> 
+			<tr>
+				<td><%= dog.dname %></td>
+				<td><%= dog.breed %></td>
+				<td><%= dog.age %></td>
+				<td><%= dog.birthday %></td>
+				<td><%= dog.oname %></td>
+			</tr>
+
+
+	<%	} %>
+
+
+	</tbody>
+
+
+
+</table>
